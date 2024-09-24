@@ -3,11 +3,13 @@ import { Route, Routes, Navigate } from "react-router";
 import TOC from "./TOC";
 import Lab2 from "./Lab2";
 import Lab3 from "./Lab3";
+import { Link } from "react-router-dom";
 export default function Labs() {
   return (
     <div>
       <h1>Labs</h1>
-      My name: Rebecca Choi
+      My name: Rebecca Choi<br />
+      <a href="https://github.com/ryschoi/kanbas-react-web-app">Link to GitHub repository</a>
       <TOC />
       <Routes>
         <Route path="/" element={<Navigate to="Lab1" />} />
@@ -17,11 +19,4 @@ export default function Labs() {
       </Routes>
     </div>
   );
-  <div id="wd-p-tag">
-  <h4>Paragraph Tag</h4>
-    <p id="wd-p-1">
-This is a paragraph. We often separate a long set of sentences with vertical spaces to make the text easier to read. Browsers ignore vertical white spaces and render all the text as one single set of sentences. To force the browser to add vertical spacing, wrap the paragraphs you want to separate with the paragraph tag
-  </p>
-</div>
-
 }
