@@ -9,6 +9,7 @@ export default function Labs() {
     <div>
       <h1>Labs</h1>
       My name: Rebecca Choi<br />
+      Section 1<br />
       <a href="https://github.com/ryschoi/kanbas-react-web-app">Link to GitHub repository</a>
       <TOC />
       <Routes>
