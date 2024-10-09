@@ -17,7 +17,7 @@ export default function PeopleTable() {
                         <td className="wd-last-activity">2020-10-01</td>
                         <td className="wd-total-activity">10:21:32</td> </tr>
 
-                        <tr><td className="wd-full-name text-nowrap">
+                    <tr><td className="wd-full-name text-nowrap">
                         <FaUserCircle className="me-2 fs-1 text-secondary" />
                         <span className="wd-first-name">Bruce</span>{" "}
                         <span className="wd-last-name">Wayne</span></td>
@@ -27,7 +27,7 @@ export default function PeopleTable() {
                         <td className="wd-last-activity">2020-10-01</td>
                         <td className="wd-total-activity">10:21:32</td> </tr>
 
-                        <tr><td className="wd-full-name text-nowrap">
+                    <tr><td className="wd-full-name text-nowrap">
                         <FaUserCircle className="me-2 fs-1 text-secondary" />
                         <span className="wd-first-name">Steve</span>{" "}
                         <span className="wd-last-name">Rogers</span></td>
@@ -37,7 +37,7 @@ export default function PeopleTable() {
                         <td className="wd-last-activity">2020-10-01</td>
                         <td className="wd-total-activity">10:21:32</td> </tr>
 
-                        <tr><td className="wd-full-name text-nowrap">
+                    <tr><td className="wd-full-name text-nowrap">
                         <FaUserCircle className="me-2 fs-1 text-secondary" />
                         <span className="wd-first-name">Natasha</span>{" "}
                         <span className="wd-last-name">Romanoff</span></td>

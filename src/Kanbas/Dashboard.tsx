@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./styles.css";
 export default function Dashboard() {
   return (
     <div id="wd-dashboard">
@@ -8,11 +9,11 @@ export default function Dashboard() {
         <div className="row row-cols-1 row-cols-md-5 g-4">
 
           {/* Course 1 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS1234 React JS
@@ -27,11 +28,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 2 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/4550/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS4550 Web Development
@@ -46,11 +47,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 3 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/3000/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS3000 Algorithms and Data
@@ -65,11 +66,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 4 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/2242/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     ARTG 2242 Information Design Principles
@@ -84,11 +85,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 5 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/2262/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     ARTG 2262 Prototyping with Code
@@ -103,11 +104,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 6 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/3500/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS35000 Object Oriented Design
@@ -122,11 +123,11 @@ export default function Dashboard() {
           </div>
 
           {/* Course 7 */}
-          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+          <div className="wd-dashboard-course col" style={{ width: "270px" }}>
             <div className="card rounded-3 overflow-hidden">
               <Link className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/4973/Home">
-                <img src="/images/reactjs.jpg" width="100%" height={160} />
+                <img src="/images/blue.png" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS4973 User-Experience Design

@@ -10,7 +10,7 @@ import PeopleTable from "./People/Table";
 export default function Courses() {
   return (
     <div id="wd-courses">
-      <h2 className="text-danger">
+      <h2 id="course-title" className="text-danger">
         <FaAlignJustify className="me-4 fs-4 mb-1" />
         Course 1234 </h2> <hr />
       <hr />
@@ -27,7 +27,6 @@ export default function Courses() {
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
             <Route path="Assignments/:aid" element={<AssignmentEditor />} />
-            <Route path="People" element={<h2>People</h2>} />
             <Route path="People" element={<PeopleTable />} />
           </Routes>
         </div></div>
