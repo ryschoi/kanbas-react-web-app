@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useParams } from "react-router";
 import { useLocation } from "react-router-dom";
 import * as db from "../../Database";
 export default function AssignmentEditor() {
-  const { cid } = useParams();
+  const { cid, aid } = useParams();
   const assignments = db.assignments;
 
   return (
@@ -11,7 +11,7 @@ export default function AssignmentEditor() {
       <h2><label id="a-title" htmlFor="wd-name">Assignment Name</label></h2>
 
       {assignments
-        // .filter((assignment) => assignment.course === cid)
+        // .filter((assignment: any) => assignment.course === cid && assignment._id == aid)
         .map((assignment) => (
           <div>
             <input className="padding" id="wd-name" defaultValue={assignment.name} /><br /><br />
