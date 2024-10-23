@@ -48,7 +48,7 @@ export default function AssignmentEditor() {
                   <label htmlFor="wd-group">Assignment Group</label>
                 </td>
                 <td>
-                  <select name="wd-group" className="padding" id="wd-group">
+                  <select name="wd-group" className="padding" id="wd-group" defaultValue={assignment.group}>
                     <option value="assignments">ASSIGNMENTS</option>
                     <option value="quizzes">QUIZZES</option>
                     <option value="exams">EXAMS</option>
@@ -63,7 +63,7 @@ export default function AssignmentEditor() {
                   <label htmlFor="wd-display-grade-as">Display grade as</label>
                 </td>
                 <td>
-                  <select name="wd-display-grade-as" className="padding" id="wd-display-grade-as">
+                  <select name="wd-display-grade-as" className="padding" id="wd-display-grade-as" defaultValue={assignment.display}>
                     <option value="percentage">Percentage</option>
                     <option value="letter">Letter</option>
                   </select>
@@ -76,7 +76,7 @@ export default function AssignmentEditor() {
                   <label htmlFor="wd-submission-type">Submission Type</label>
                 </td>
                 <td>
-                  <select name="wd-submission-type" className="padding" id="submission-type">
+                  <select name="wd-submission-type" className="padding" id="submission-type" defaultValue={assignment.submission}>
                     <option value="online">Online</option>
                     <option value="paper">Paper</option>
                   </select>
