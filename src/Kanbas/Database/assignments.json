@@ -1,0 +1,23 @@
+[
+    {
+        "name": "A1 - ENV + HTML",
+        "available": "2024-05-06",
+        "due": "2024-05-13",
+        "until": "2024-05-13",
+        "points": "100"
+    },
+    {
+        "name": "A2 - CSS + BOOTSTRAP",
+        "available": "2024-05-13",
+        "due": "2024-05-20",
+        "until": "2024-05-20",
+        "points": "100"
+    },
+    {
+        "name": "A3 - JAVASCRIPT + REACT",
+        "available": "2024-05-20",
+        "due": "2024-05-27",
+        "until": "2024-05-27",
+        "points": "100"
+    }
+]

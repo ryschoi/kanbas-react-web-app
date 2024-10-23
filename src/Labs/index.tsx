@@ -6,7 +6,7 @@ import Lab3 from "./Lab3";
 import { Link } from "react-router-dom";
 export default function Labs() {
   return (
-    <div>
+    <div className="p-3">
       <h1>Labs</h1>
       My name: Rebecca Choi<br />
       Section 1<br />
@@ -16,7 +16,7 @@ export default function Labs() {
         <Route path="/" element={<Navigate to="Lab1" />} />
         <Route path="Lab1" element={<Lab1 />} />
         <Route path="Lab2" element={<Lab2 />} />
-        <Route path="Lab3" element={<Lab3 />} />
+        <Route path="Lab3/*" element={<Lab3 />} />
       </Routes>
     </div>
   );
