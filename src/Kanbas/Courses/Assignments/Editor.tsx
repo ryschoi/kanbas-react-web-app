@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Navigate, Route, Routes, useParams } from "react-router";
 import { useLocation } from "react-router-dom";
 import * as db from "../../Database";
+import { useState } from "react";
+
 export default function AssignmentEditor() {
   const { cid, aid } = useParams();
   const assignments = db.assignments;
@@ -16,18 +18,17 @@ export default function AssignmentEditor() {
           <div>
             <input className="padding" id="wd-name" defaultValue={assignment.name} /><br /><br />
             <textarea id="wd-description">
-              The assignment is available online.
-              Submit a link to the landing page of your Web application running on Netlify.
+                The assignment is available online.
+                Submit a link to the landing page of your Web application running on Netlify.
+                
+                The landing page should include the following:
 
-              The landing page should include the following:
+                •  Your full name and section
+                •  Links to each of the lab assignments
+                •  Link to the Kanbas application
+                •  Links to all relevant source code repositories
 
-              •  Your full name and section
-              •  Links to each of the lab assignments
-              •  Link to the Kanbas application
-              •  Links to all relevant source code repositories
-
-              The Kanbas application should include a link to navigate back to the landing page.
-
+                The Kanbas application should include a link to navigate back to the landing page.
             </textarea>
             <br /> <br />
 
@@ -117,7 +118,7 @@ export default function AssignmentEditor() {
                 <td className="padding-right" align="right" valign="top">
                   <label htmlFor="wd-assign-to">Assign</label>
                 </td>
-                <td>
+                <td className="table-border">
                   Assign to<br />
                   <input className="padding" type="text" id="wd-assign-to" value={"Everyone"} />
                   <br /><br />
@@ -141,7 +142,8 @@ export default function AssignmentEditor() {
             </table>
             <hr />
             <div id="bottom-buttons-group">
-              <button className="bottom-buttons" id="cancel-bt">Cancel</button> <button className="bottom-buttons" id="save-bt">Save</button>
+              <Link to="../Assignments"><button className="bottom-buttons" id="cancel-bt">Cancel</button></Link>
+              <button className="bottom-buttons" id="save-bt">Save</button>
             </div>
           </div>
         ))
