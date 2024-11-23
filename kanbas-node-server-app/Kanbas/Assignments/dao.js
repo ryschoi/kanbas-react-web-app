@@ -1,23 +1,23 @@
 import Database from "../Database/index.js";
-export function deleteAssignment(assignmentId) {
-  const { assignments } = Database;
-  Database.assignments = assignments.filter((assignment) => assignment._id !== assignmentId);
+export function deleteModule(moduleId) {
+  const { modules } = Database;
+  Database.modules = modules.filter((module) => module._id !== moduleId);
 }
 
-export function createAssignment(assignment) {
-  const newassignment = { ...assignment, _id: Date.now().toString() };
-  Database.assignments = [...Database.assignments, newassignment];
-  return newassignment;
+export function createModule(module) {
+  const newModule = { ...module, _id: Date.now().toString() };
+  Database.modules = [...Database.modules, newModule];
+  return newModule;
 }
 
-export function findAssignments(assignmentId) {
-  const { assignments } = Database;
-  return assignments.filter((assignment) => assignment._id === assignmentId);
+export function findModulesForCourse(courseId) {
+  const { modules } = Database;
+  return modules.filter((module) => module.course === courseId);
 }
 
-export function updateAssignment(assignmentId, assignmentUpdates) {
-  const { assignments } = Database;
-  const assignment = assignments.find((assignment) => assignment._id === assignmentId);
-  Object.assign(assignment, assignmentUpdates);
-  return assignment;
+export function updateModule(moduleId, moduleUpdates) {
+  const { modules } = Database;
+  const module = modules.find((module) => module._id === moduleId);
+  Object.assign(module, moduleUpdates);
+  return module;
 }
